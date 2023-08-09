@@ -1,0 +1,221 @@
+/* styles.css */
+
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .menu {
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    float: left;
+    width: 20%;
+    padding: 20px;
+    flex: 0 0 20%; /* Set a fixed width for the menu */
+  }
+  
+  .content {
+    float: left;
+    width: 100%;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-left: none;
+    flex: 1;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .back-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+  }
+  
+  /* Additional custom styling for other components */
+
+  ul.horizontal-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  ul.horizontal-list li {
+    width: calc(20% - 20px); /* Adjust width and margin */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; /* Add a background color */
+    border: 1px solid #ddd; /* Add a border */
+    padding: 10px;
+    border-radius: 4px; /* Add rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .login-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .dropbtn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 150px;
+    text-align: left;
+    position: relative;
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px; /* Adjust font size */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
